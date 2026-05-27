@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+      GIT_LFS_SKIP_SMUDGE: "1"
 
     steps:
       - name: 1. 코드 체크아웃 (서브모듈 포함)
